@@ -1,1 +1,21 @@
+{% extends "layout.html"%}
 
+{% block content %}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Learn About Chronic Conditions </h4>
+        <p class="card-text">Gain insight and deepen your knowledge about common chronic conditions.</p>
+        <button type="button" class="btn btn-success">Learn</button>
+    </div>
+</div>
+
+<div class="container">
+    {% include "services.html" %}
+</div>
+
+{% include "medicalassistance.html" %}
+{% include "nonsurgicaltreatments.html" %}
+
+
+{% endblock %}
